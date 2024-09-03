@@ -1,0 +1,35 @@
+*{
+    font-family: "Kumbh Sans", sans-serif;
+}
+a {
+    position: relative;
+}
+
+a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: none;
+    background-color: hsl(26, 100%, 55%);
+    width: 100%;
+    height: 1px;
+}
+
+a:hover::before{
+    display: inline-block;
+}
+
+.addBTN{
+    color: black;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px 40px;
+    background-color: hsl(26, 100%, 55%);
+}
+
+.decreament,.increament{
+    background-color: black;
+    color: aqua;
+    border: 0 !important;
+}
